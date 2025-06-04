@@ -10,9 +10,9 @@ const heartContainer = document.getElementById('heart-container');
 const button = document.getElementById('pet-me');
 
 // Image paths for different panda expressions
-const eyesOpen = './assets/PanEyeOpen.png';
-const eyesClose = './assets/PanEyeClose.png';
-const eyesHappy = './assets/PanSmile.png';
+const eyesOpen = './PanEyeOpen.png';
+const eyesClose = './PanEyeClose.png';
+const eyesHappy = './PanSmile.png';
 
 // Blinking mechanism using setInterval
 function blink() {
@@ -135,7 +135,7 @@ document.addEventListener('mouseup', () => {
         console.log('Bamboo Fed!');
         
         // Switch to happy panda
-        panda.src = './assets/PanSmile.png';
+        panda.src = './PanSmile.png';
 
         // Show the heart for feedback
       heart.style.display = 'block';
@@ -144,7 +144,7 @@ document.addEventListener('mouseup', () => {
 
       // Reset Panda and Heart after a short delay
       setTimeout(() => {
-        panda.src = './assets/PanEyeOpen.png';
+        panda.src = './PanEyeOpen.png';
         heart.style.display = 'none';
       }, 3000);
     }
