@@ -16,7 +16,7 @@ body {
   }
   
   #pet-me:hover {
-    content: url('./assets/ButtonHover.png'); /* Change to hover image on hover */
+    content: url('./ButtonHover.png'); /* Change to hover image on hover */
   }
   
   #panda {
@@ -40,7 +40,7 @@ body {
   .heart {
     position: absolute;
     bottom: 0;
-    background: url('./assets/heart.png') no-repeat center/contain;
+    background: url('./heart.png') no-repeat center/contain;
     width: 60px;
     height: 60px;
     animation: floatUp linear infinite;
