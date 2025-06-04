@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    margin: 0;
+    background-color: #FCFFE7; /* Sky Blue Background */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  #pet-me {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  #pet-me:hover {
+    content: url('./assets/ButtonHover.png'); /* Change to hover image on hover */
+  }
+  
+  #panda {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+  }
+  
+  #heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Prevent interactions with hearts */
+  }
+  
+  .heart {
+    position: absolute;
+    bottom: 0;
+    background: url('./assets/heart.png') no-repeat center/contain;
+    width: 60px;
+    height: 60px;
+    animation: floatUp linear infinite;
+
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+  }
+
+#bamboo1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 500px;
+    cursor: grab;   
+}
+
+#bamboo2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 250px;
+    cursor: grab;   
+}
+
+#bamboo3 {
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    height: 350px;
+    cursor: grab;   
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+#heartDialogBox {
+    display: none;
+    height: 30px;
+    width: auto;
+}
